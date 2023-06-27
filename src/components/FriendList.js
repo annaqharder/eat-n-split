@@ -1,8 +1,6 @@
 import Friend from "./Friend";
 
-function FriendList({ initialFriends }) {
-  const friends = initialFriends;
-
+function FriendList({ friends }) {
   const friendList = friends.map((friend) => (
     <Friend friend={friend} key={friend.id} />
   ));
